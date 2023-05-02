@@ -1,0 +1,66 @@
+@import './common.scss';
+@import './variable.scss';
+
+div {
+  color: $menuBg;
+}
+
+// 设置页面中心公共的scss样式
+.table {
+  overflow: hidden;
+  padding: 15px 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+}
+
+.filter-section {
+  margin-bottom: 20px !important;
+}
+
+.filter {
+  width: 20% !important;
+  height: 30px !important;
+  margin-right: 20px;
+}
+// 页码
+.pagination {
+  float: right;
+  margin-top: 10px;
+}
+
+// 抽屉叉号样式设置
+.el-drawer__header {
+  display: block !important;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  height: 50px;
+  border-bottom: 1px solid #eee;
+
+  h4 {
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    margin-left: 10px;
+  }
+
+  .el-drawer__close-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $menuBg !important;
+
+    i {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -10px;
+      margin-top: -11px;
+    }
+  }
+}
